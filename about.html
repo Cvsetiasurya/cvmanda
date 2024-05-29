@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Mendefinisikan tipe dokumen HTML -->
+<html lang="en">
+<!-- Menentukan bahasa dokumen -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <!-- Mengatur karakter encoding dokumen -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Mengatur viewport untuk tampilan responsif -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Menghubungkan dokumen dengan CSS Bootstrap -->
+  <link rel="stylesheet" href="assets/style.css" />
+  <!-- Menghubungkan dokumen dengan file CSS kustom -->
+  <style>
+    /* CSS khusus untuk tombol 'Go to top' */
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(179, 18, 18);
+      /* Warna latar belakang tombol */
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Warna latar belakang tombol saat dihover */
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+  <!-- Menghubungkan dokumen dengan favicon -->
+  <title>About | Pemrograman Web</title>
+  <!-- Judul halaman -->
+</head>
+
+<body style="padding-top: 50px">
+  <!-- Mengatur padding atas untuk elemen dalam body -->
+
+  <!-- Tombol 'Go to top' -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="padding-left: 15px">
+        <img src="image/logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+      </a>
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- List Menu Navbar -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- Additional Text in Navbar -->
+        <span class="navbar-text"> Pemrograman Web </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section About -->
+  <section id="about" class="about">
+    <div class="about-me container">
+      <div class="section-title">
+        <h2 class="activeTitle">About</h2>
+        <!-- Judul bagian About -->
+      </div>
+      <br />
+
+      <div class="row">
+        <!-- Kolom kiri - Gambar -->
+        <div class="col-lg-3" data-aos="fade-right">
+          <img src="image/Me.jpg" class="img-fluid" alt="" />
+          <!-- Gambar personal -->
+        </div>
+        <!-- Kolom kanan - Informasi -->
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Diana Mandasari</h3>
+          <!-- Nama -->
+          <p class="fst-italic">
+            "Saya adalah seorang Pelajar yang bersemangat dalam
+            menggabungkan pengetahuan teknis dan kreativitas untuk mencapai
+            hasil yang luar biasa. Dengan latar belakang pendidikan di bidang
+            teknik komputer, saya berusaha sungguh-sungguh untuk mengejar dunia teknologi. Saya memiliki
+            kemampuan komunikasi yang kuat dan terbukti mampu beradaptasi
+            dengan lingkungan kerja yang dinamis, sehingga mampu bekerja sama
+            dengan berbagai disiplin ilmu dan menyelesaikan proyek-proyek
+            dengan efisiensi dan keunggulan."<br />
+            "dengan mengetahui bahwa dunia teknologi perubahannya cepat sehingga saya juga harus dapat
+            berkomunikasi dan beradaptasi dengan cepat sehingga bisa menjadi web developer yang baik ."
+            <!-- Deskripsi singkat -->
+          </p>
+          <!-- Tabel informasi personal -->
+          <div class="row">
+            <div class="col-lg-6">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th>Panggilan</th>
+                    <td>: Diana</td>
+                  </tr>
+                  <tr>
+                    <th>NIM</th>
+                    <td>: 230401070213</td>
+                  </tr>
+                  <tr>
+                    <th>Tanggal Lahir</th>
+                    <td>: 5 februari 2003</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th>Umur</th>
+                    <td>: 21</td>
+                  </tr>
+                  <tr>
+                    <th>Alamat</th>
+                    <td>: Araria apartment, jln.utl 9, kolej lagenda, mantin, kampung gebok, seremban, negeri sembilan, Malaysia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Paragraf deskripsi -->
+          <p>Memiliki ketertarikan di bidang Jaringan, baca buku dan Alam.</p>
+          <!-- Progress bar untuk ketertarikan -->
+          <div class="progress" style="height: 21px; margin: 10px 0">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              Jaringan
+            </div>
+          </div>
+          <div class="progress" style="height: 21px; margin: 10px 0">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              Baca Buku
+            </div>
+          </div>
+          <div class="progress" style="height: 21px; margin: 10px 0">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              Alam
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+  </section>
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="text-center p-4" style="color: white">
+    <!-- Ikon sosial media berbentuk gambar -->
+    <a href="https://www.facebook.com/circledna/videos/3668422746736900/?app=fbl" target="_blank" class="me-4 text-reset">
+      <img src="assets/facebook.png" alt="Facebook" width="30" height="30" />
+    </a>
+    <a href="https://www.instagram.com/di.anaaa25?igsh=MWhrZjRzdW00dm1vaA==" target="_blank" class="me-4 text-reset">
+      <img src="assets/instagram.png" alt="Instagram" width="30" height="30" />
+    </a>
+    <a href="https://wa.me/+60182181470" target="_blank" class="me-4 text-reset">
+      <img src="assets/whatsapp.png" alt="WhatsApp" width="30" height="30" />
+    </a>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center bg-dark" style="width: 100%">
+    <div class="text-center p-4" style="color: white">
+      <!-- Tambahkan teks hak cipta -->
+      © 2024 | Diana Mandasari
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="assets/behavior.js"></script>
+  <!-- Menghubungkan dokumen dengan file JavaScript kustom -->
+</body>
+
+</html>

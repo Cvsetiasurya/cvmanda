@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- Menentukan bahwa dokumen adalah dokumen HTML -->
+<html lang="en">
+  <!-- Menentukan bahasa konten halaman -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Mendefinisikan karakter encoding dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Menentukan responsif tampilan halaman pada perangkat dengan lebar layar yang berbeda -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Menghubungkan dokumen dengan file CSS Bootstrap untuk styling -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- Menghubungkan dokumen dengan file CSS kustom -->
+
+    <!-- Inline CSS -->
+    <style>
+      /* CSS untuk button khusus 'Go to top' */
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(179, 18, 18);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <!-- Menghubungkan dokumen dengan gambar ikon yang akan digunakan -->
+
+    <title>Home | Pemrograman Web</title>
+    <!-- Judul dokumen -->
+  </head>
+  <body style="padding-top: 50px">
+    <!-- Menetapkan padding atas untuk elemen-elemen dalam body -->
+
+    <!-- Button 'Go to top' -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <!-- Kontainer Navbar -->
+      <div class="container-fluid">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#" style="padding-left: 15px">
+          <!-- Logo -->
+          <img
+            src="image/logo.jpg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- List Menu Navbar -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><b>Home</b></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Additional Text in Navbar -->
+          <span class="navbar-text"> Pemrograman Web </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators Carousel -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item active c-item">
+          <img
+            src="image/Banner1.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption bottom-4 mt-5 translate-middle-y">
+            <h1 class="display-1 fw-bolder text-capitalize">Pemrograman Web</h1>
+          </div>
+        </div>
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item c-item">
+          <img
+            src="image/Banner2.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption bottom-0 mt-4 translate-middle-y">
+            <p class="display-1 fw-bolder text-capitalize">My Hobby</p>
+          </div>
+        </div>
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item c-item">
+          <img
+            src="image/Banner3.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption bottom-0 mt-4 translate-middle-y">
+            <p class="display-1 fw-bolder text-capitalize">My Interest</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Control Previous -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- Carousel Control Next -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container mt-5 text-center">
+      <h1>Diana Mandasari</h1>
+      <h2>230401070213 | IT205</h2>
+      <p>Pemrograman Web</p>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <!-- Kolom 1 -->
+          <h2>Ketentuan</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Deskirpsi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  Kerjakan secara individu (maksimal 1 orang), dilarang keras
+                  copy-paste atau plagiat hasil tugas rekannya. Silahkan ketik
+                  ulang hasil temannya jika Anda tidak percaya diri dengan
+                  kemampuan diri sendiri :D, karena minimal Anda akan membaca
+                  dan belajar.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  Perhatikan waktu yang telah di-setting untuk mengerjakan
+                  Tugas, jika lewat batas waktu maka jawaban Anda tidak akan
+                  diterima.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  Tulis lengkap identitas Anda pada file home/indeks dengan
+                  keyword komentar (Nama, NIM, Kelas, Nama Mata Kuliah).
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  Gunakan Text Editor seperti: VS Code/ Sublime Text/IntelliJ
+                  IDEA, atau yang sejenis untuk menuliskan jawaban.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                  Compress/satukan file hasil tugas Anda dengan format .zip,
+                  beri nama file compress: Nama_NIM.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>
+                  Upload hasil tugas Anda pada halaman jawaban Tugas di LMS.
+                  Jika ukuran file melebihi batas maksimal file untuk di-upload,
+                  silahkan upload jawaban Anda pada media lain (Google Drive,
+                  Cloud, Mediafire, etc). Lalu tuliskan link file Anda pada
+                  halaman jawaban Tugas di LMS.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <!-- Kolom 2 -->
+          <h2>SOAL (Bobot: 80%)</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Ketentuan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Memiliki image/foto diri</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  Minimal terdapat 2 paragraf tentang deskripsi diri atau apapun
+                  yang menjelaskan tentang diri Anda.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Memiliki tag-tag Heading dan elemen Komentar</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Memiliki tag-tag untuk Text Formatting</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                  Memiliki minimal 3 link internal atau eksternal (bebas menuju
+                  ke apapun)
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Memiliki minimal 3 image/gambar</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Memiliki minimal 2 tabel</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Memiliki minimal 2 list</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark" style="width: 100%">
+      <div class="text-center p-3" style="color: white">
+        © 2024 | Diana Mandasari
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="assets/behavior.js"></script>
+    <!-- Menghubungkan dokumen dengan file JavaScript kustom -->
+  </body>
+</html>

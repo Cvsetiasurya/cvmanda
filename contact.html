@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- Menentukan bahwa dokumen adalah dokumen HTML -->
+<html lang="en">
+  <!-- Menentukan bahasa konten halaman -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Mendefinisikan karakter encoding dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Menentukan responsif tampilan halaman pada perangkat dengan lebar layar yang berbeda -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Menghubungkan dokumen dengan file CSS Bootstrap untuk styling -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- Menghubungkan dokumen dengan file CSS kustom -->
+
+    <!-- Inline CSS -->
+    <style>
+      /* CSS untuk button khusus 'Go to top' */
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(179, 18, 18);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <!-- Menghubungkan dokumen dengan gambar ikon yang akan digunakan -->
+
+    <title>Contact | Pemrograman Web</title>
+    <!-- Judul dokumen -->
+  </head>
+  <body style="padding-top: 50px">
+    <!-- Menetapkan padding atas untuk elemen-elemen dalam body -->
+
+    <!-- Button 'Go to top' -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#" style="padding-left: 15px">
+          <!-- Logo -->
+          <img
+            src="image/logo.jpg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- List Menu Navbar -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html"><b>Contact</b></a>
+            </li>
+          </ul>
+          <!-- Additional Text in Navbar -->
+          <span class="navbar-text"> Pemrograman Web </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+      <!-- Container -->
+      <div class="container">
+        <!-- Row untuk judul -->
+        <div class="row justify-content-center text-center">
+          <h2 class="ContactTitle"><b>Contact</b></h2>
+          <!-- Judul halaman kontak -->
+          <div class="barContact"></div>
+          <!-- Garis pemisah -->
+        </div>
+
+        <!-- Baris kontak utama -->
+        <div class="row mainCardContact">
+          <div class="container text-center">
+            <!-- Nama kontak -->
+            <p
+              class="Cardcontact"
+              style="
+                margin: 2px;
+                margin-top: 15px;
+                font-size: large;
+                text-transform: uppercase;
+              "
+            >
+              <b>Diana Mandasari</b>
+            </p>
+          </div>
+          <!-- Kolom kiri -->
+          <div class="col-6">
+            <div class="info">
+              <!-- Alamat -->
+              <div class="address Cardcontact">
+                <h4><i class="fa-solid fa-location-dot"></i> Location:</h4>
+                <p>
+                  Jalan R.M Harsono No.1 RT09/04 Ragunan, Pasar Minggu, Jakarta
+                  Selatan Lantai 1-2, South Jakarta City, Jakarta 12550
+                </p>
+              </div>
+              <!-- Email -->
+              <div class="email Cardcontact">
+                <h4><i class="fa-solid fa-envelope"></i> Email:</h4>
+                <p>DianaMandasari@gmail.com</p>
+              </div>
+              <!-- Nomor telepon -->
+              <div class="phone Cardcontact">
+                <h4><i class="fa-solid fa-phone-volume"></i> Call:</h4>
+                <p>+62 81234567890</p>
+              </div>
+              <br /><br />
+            </div>
+          </div>
+          <!-- Kolom kanan -->
+          <div class="col-6">
+            <!-- Peta Google Maps -->
+            <div class="embed-responsive Cardcontact">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.941831937906!2d106.8205877!3d-6.2984519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sid!2sid!4v1715503261326!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulir pengiriman pesan -->
+        <div class="row mainCardContact bg-dark" style="color: white">
+          <div class="container text-center">
+            <!-- Judul formulir -->
+            <p
+              class="Cardcontact"
+              style="
+                margin: 2px;
+                margin-top: 15px;
+                font-size: large;
+                text-transform: uppercase;
+                background-color: #595959;
+              "
+            >
+              <b>Send Your suggestion!</b>
+            </p>
+          </div>
+
+          <div class="">
+            <!-- Formulir -->
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <!-- Baris input -->
+              <div class="row">
+                <!-- Input nama -->
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <!-- Input email -->
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Input subjek -->
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <!-- Input pesan -->
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <div class="my-3"></div>
+              <!-- Tombol kirim -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-light" type="button">Send</button>
+              </div>
+            </form>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark" style="width: 100%">
+      <div class="text-center p-3" style="color: white">
+        © 2024 | Diana Mandasari
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome JS -->
+    <script
+      src="https://kit.fontawesome.com/4c1da8a416.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="assets/behavior.js"></script>
+    <!-- Menghubungkan dokumen dengan file JavaScript kustom -->
+  </body>
+</html>
